@@ -1,17 +1,32 @@
 @charset "UTF-8";
 
-* {
+*{
 margin:0; padding:0;
 color:#ffffff;
 }
 
-body {
+body{
 background-color:#000000;
 text-align:center;
 }
 
-div#base {
+div#base{
 width:900px; margin:5px;
 text-align:center;
-background-color:#202020;
+background-color:#101010;
+}
+
+div#header{
+height:80px;
+background-color:#303030;
+}
+
+div#main{
+width:500px;
+background-color:#303030;
+}
+
+div#sub{
+width:160px;
+background-color:#303030;
 }
