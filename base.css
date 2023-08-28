@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+* {
+margin:0; padding:0;
+color:#ffffff;
+}
+
+body {
+background-color:#000000;
+text-align:center;
+}
+
+div#base {
+width:900px; margin:5px;
+text-align:center;
+background-color:#202020;
+}
