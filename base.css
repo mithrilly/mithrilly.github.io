@@ -24,9 +24,11 @@ background-color:#303030;
 div#main{
 width:500px;
 background-color:#303030;
+float:left;
 }
 
 div#sub{
 width:160px;
 background-color:#303030;
+float:right;
 }
