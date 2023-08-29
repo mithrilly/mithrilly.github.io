@@ -26,13 +26,13 @@ background-color:#303030;
 }
 
 div#main{
-width:580px;
+width:600px;
 background-color:#303030;
 float:left;
 }
 
 div#sub{
-width:280px;
+width:300px;
 background-color:#303030;
 float:right;
 }
