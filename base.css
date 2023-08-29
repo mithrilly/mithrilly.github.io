@@ -10,14 +10,16 @@ body{
 background-color:#000000;
 }
 
+div{
+border-width:1px;
+border-style:solid;
+border-color:#c0c0c0;
+}
+
 div#base{
 width:900px; height:auto;
 margin:20px auto;
 background-color:#101010;
-float:center;
-border-width:1px;
-border-style:solid;
-border-color:#c0c0c0;
 }
 
 div#header{
@@ -38,6 +40,7 @@ float:left;
 
 div#sub{
 width:280px; height;auto;
+padding:10px;
 background-color:#202020;
 float:right;
 text-align:left;
