@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+*{
+margin:10px; padding:0px;
+color:#ffffff;
+font-family:"MS Gothic";
+}
+
+body{
+background-color:#000000;
+text-align:center;
+}
