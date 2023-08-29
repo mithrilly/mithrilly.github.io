@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 *{
-margin:0px; padding:0px;
+margin:10px; padding:0px;
 color:#ffffff;
 font-family:"MS Gothic";
 }
@@ -20,7 +20,8 @@ border-color:#c0c0c0;
 }
 
 div#header{
-width:auto; height:80px; margin:20px;
+width:auto; height:80px;
+margin:20px; padding:10px;
 background-color:#202020;
 text-align:center;
 }
@@ -30,14 +31,14 @@ border-width:0px;
 }
 
 div#main{
-width:590px; height:auto;
+width:580px; height:auto;
 background-color:#202020;
 float:left;
 text-align:center;
 }
 
 div#sub{
-width:290px; height;auto;
+width:280px; height;auto;
 background-color:#202020;
 float:right;
 text-align:left;
