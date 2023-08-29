@@ -30,14 +30,14 @@ text-align:center;
 }
 
 div#main{
-width:580px;
+width:580px; height:600px;
 margin:10px;
 background-color:#202020;
 float:left;
 }
 
 div#sub{
-width:260px;
+width:260px; height:600px;
 margin:10px; padding:10px;
 background-color:#202020;
 float:right;
