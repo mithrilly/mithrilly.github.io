@@ -1,28 +1,32 @@
 @charset "UTF-8";
 
 *{
-margin:10px; padding:0px;
+margin:0px; padding:0px;
 color:#ffffff;
-border-width:1px;
-border-style:solid;
-border-color:#c0c0c0;
+font-family:"MS Gothic";
 }
 
 body{
 background-color:#000000;
-font-family:"MS Gothic";
 }
 
 div#base{
 width:900px; height:800px; margin:20px auto;
 background-color:#101010;
 float:center;
+border-width:1px;
+border-style:solid;
+border-color:#c0c0c0;
 }
 
 div#header{
 width:auto; height:80px; margin:20px;
 background-color:#202020;
 text-align:center;
+}
+
+h1{
+border-width:0px;
 }
 
 div#main{
