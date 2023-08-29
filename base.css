@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 *{
-margin:0px; padding:0px;
+margin:10px; padding:10px;
 color:#ffffff;
+border-width:1px;
+border-color:#c0c0c0;
 }
 
 body{
@@ -12,9 +14,10 @@ font-family:"MS Gothic";
 }
 
 div#base{
-width:900px; margin:5px;
+width:900px; margin:20px;
 text-align:center;
 background-color:#101010;
+float:center;
 }
 
 div#header{
