@@ -4,6 +4,7 @@
 margin:10px; padding:10px;
 color:#ffffff;
 border-width:1px;
+border-style:solid;
 border-color:#c0c0c0;
 }
 
@@ -15,7 +16,6 @@ font-family:"MS Gothic";
 
 div#base{
 width:900px; margin:20px;
-text-align:center;
 background-color:#101010;
 float:center;
 }
@@ -26,13 +26,13 @@ background-color:#303030;
 }
 
 div#main{
-width:500px;
+width:600px;
 background-color:#303030;
 float:left;
 }
 
 div#sub{
-width:160px;
+width:300px;
 background-color:#303030;
 float:right;
 }
