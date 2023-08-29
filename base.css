@@ -5,6 +5,7 @@ width:auto; height:auto;
 margin:0px; padding:0px;
 color:#ffffff;
 font-family:"MS Gothic";
+border-width:0px;
 }
 
 body{
@@ -13,7 +14,7 @@ background-color:#000000;
 
 div#base{
 width:900px; height:800px;
-margin:20px auto;
+margin:20px;
 background-color:#101010;
 }
 
@@ -29,6 +30,7 @@ width:560px; height:600px;
 margin:10px; padding:10px;
 background-color:#202020;
 float:left;
+text-align:center;
 }
 
 div#sub{
@@ -37,8 +39,4 @@ margin:10px; padding:10px;
 background-color:#202020;
 float:right;
 text-align:left;
-}
-
-iframe{
-border-width:0px;
 }
