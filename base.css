@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 *{
+width:auto; height:auto;
 margin:0px; padding:0px;
 color:#ffffff;
 font-family:"MS Gothic";
@@ -17,14 +18,14 @@ background-color:#101010;
 }
 
 div#header{
-width:860px; height:40px;
+width:860px; height:30px;
 margin:10px; padding:10px;
 background-color:#202020;
 text-align:center;
 }
 
 div#main{
-width:580px; height:600px;
+width:560px; height:600px;
 margin:10px; padding:10px;
 background-color:#202020;
 float:left;
@@ -36,4 +37,8 @@ margin:10px; padding:10px;
 background-color:#202020;
 float:right;
 text-align:left;
+}
+
+iframe{
+border-width:0px;
 }
