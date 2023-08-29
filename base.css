@@ -10,12 +10,6 @@ body{
 background-color:#000000;
 }
 
-/*div{
-border-width:1px;
-border-style:solid;
-border-color:#c0c0c0;
-}*/
-
 div#base{
 width:900px; height:800px;
 margin:20px auto;
@@ -31,7 +25,7 @@ text-align:center;
 
 div#main{
 width:580px; height:600px;
-margin:10px;
+margin:10px; padding:10px;
 background-color:#202020;
 float:left;
 }
