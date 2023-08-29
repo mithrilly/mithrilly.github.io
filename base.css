@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 *{
-margin:0px; padding:0px;
+margin:10px; padding:0px;
 color:#ffffff;
 border-width:1px;
 border-style:solid;
@@ -21,18 +21,18 @@ float:center;
 }
 
 div#header{
-height:80px;
+height:80px; margin:20px;
 background-color:#303030;
 }
 
 div#main{
-width:600px;
+width:590px;
 background-color:#303030;
 float:left;
 }
 
 div#sub{
-width:300px;
+width:290px;
 background-color:#303030;
 float:right;
 }
