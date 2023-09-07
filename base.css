@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
 *{
-width:auto; height:auto;
 margin:0px; padding:0px;
 color:#ffffff;
 font-family:"MS Gothic";
 border-width:0px;
+}
+
+a{
+color:#ffff00;
 }
 
 body{
@@ -26,7 +29,7 @@ text-align:center;
 }
 
 div#main{
-width:560px; height:700px;
+width:660px; height:700px;
 margin:10px; padding:10px;
 background-color:#202020;
 float:left;
@@ -34,7 +37,7 @@ text-align:center;
 }
 
 div#sub{
-width:260px; height:700px;
+width:160px; height:700px;
 margin:10px; padding:10px;
 background-color:#202020;
 float:right;
@@ -42,5 +45,5 @@ text-align:left;
 }
 
 iframe{
-width:540px; height:680px;
+width:640px; height:680px;
 }
