@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+background-color: #aaaaaa;
+}
+
+div {
+width: 900px;
+background-color: #dddddd;
+margin: 16px auto;
+padding: 16px 0px;
+text-align: center;
+}
+
+table tr td {
+border-width: 1px;
+}
