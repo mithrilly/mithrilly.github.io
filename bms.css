@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 body {
-background-color: #aaaaaa;
+background-color: #999999;
 }
 
 div {
 width: 1000px;
 margin: 16px auto;
 padding: 16px 0px;
-background-color: #dddddd;
+background-color: #cccccc;
 text-align: center;
 }
 
@@ -18,7 +18,7 @@ height: 160px;
 margin: 4px 0px;
 padding: 8px;
 border-width: 1px;
-background-color: #cccccc;
+background-color: #bbbbbb;
 text-align: center;
 display: inline-block;
 vertical-align: top;
