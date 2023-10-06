@@ -5,13 +5,21 @@ background-color: #aaaaaa;
 }
 
 div {
-width: 900px;
-background-color: #dddddd;
+width: 1000px;
 margin: 16px auto;
 padding: 16px 0px;
+background-color: #dddddd;
 text-align: center;
 }
 
-table tr td {
+li {
+width: 240px;
+height: 160px;
+margin: 4px 0px;
+padding: 8px;
 border-width: 1px;
+background-color: #cccccc;
+text-align: center;
+display: inline-block;
+vertical-align: top;
 }
