@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+color: #ffffff;
+}
+
+body {
+background-color: #000000;
+}
+
+div {
+margin: 8px;
+padding: 8px;
+background-color: #000000;
+}
+
+div#base {
+width: 1000px;
+height: 800px;
+margin: 16px auto;
+background-color: #333333;
+}
+
+div#header {
+text-align: center;
+}
+
+div#submenu {
+width: 240px;
+height: 720px;
+float: left;
+}
+
+div#content {
+margin: 0px;
+padding: 0px;
+background-color: #333333;
+float: right;
+}
+
+div#main {
+width: 456px;
+height: 720px;
+float: left;
+}
+
+div#menu {
+width: 240px;
+height: 720px;
+float: right;
+}
+
+a {
+color: #00ffff;
+}
