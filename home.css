@@ -9,16 +9,17 @@ background-color: #000000;
 }
 
 div {
-margin: 8px;
-padding: 8px;
-background-color: #000000;
+margin: 6px;
+padding: 5px;
+border-width: 1px;
+border-color: #999999;
 }
 
 div#base {
-width: 1000px;
-height: 800px;
-margin: 16px auto;
-background-color: #333333;
+width: 1200px;
+height: 608px;
+margin: 12px 40px;
+border-color: #333333;
 }
 
 div#header {
@@ -27,26 +28,26 @@ text-align: center;
 
 div#submenu {
 width: 240px;
-height: 720px;
+height: 548px;
 float: left;
 }
 
 div#content {
 margin: 0px;
 padding: 0px;
-background-color: #333333;
+border-width: 0px;
 float: right;
 }
 
 div#main {
-width: 456px;
-height: 720px;
+width: 720px;
+height: 548px;
 float: left;
 }
 
 div#menu {
-width: 240px;
-height: 720px;
+width: 192px;
+height: 548px;
 float: right;
 }
 
