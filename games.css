@@ -9,10 +9,30 @@ background-color: #000000;
 }
 
 div {
-width: 640px;
-margin: 16px auto;
-padding: 16px 0px;
-background-color: #333333;
+margin: 6px;
+padding: 5px;
+border-width: 1px;
+border-color: #999999;
+}
+
+div#base {
+width: 800px;
+margin: 12px 240px;
+border-color: #000000;
+}
+
+div#title {
+width: 192px;
+}
+
+div#content {
+width: 432px;
+float: left;
+}
+
+div#images {
+width: 332px;
+float: right;
 }
 
 a {

@@ -11,6 +11,10 @@ box-sizing: border-box;
 line-height: 1;
 }
 
+h1, h2 {
+font-weight: normal;
+}
+
 a {
 color: #0000ff;
 text-decoration: underline;
