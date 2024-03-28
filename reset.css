@@ -20,6 +20,10 @@ color: #0000ff;
 text-decoration: underline;
 }
 
+table {
+border-collapse: collapse;
+}
+
 ul, ol, li {
 list-style-type: none;
 }

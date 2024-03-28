@@ -1,25 +1,33 @@
 @charset "UTF-8";
 
 body {
-background-color: #999999;
+background-color: #99ff99;
 }
 
-div {
-width: 1000px;
-margin: 16px auto;
-padding: 16px 0px;
-background-color: #cccccc;
-text-align: center;
+div#base {
+width: 640px;
+margin: 12px 320px;
+padding: 6px;
+background-color: #ccffcc;
 }
 
-li {
-width: 240px;
-height: 160px;
-margin: 4px 0px;
-padding: 8px;
+div.bms {
+width: 608px;
+margin: 5px;
+padding: 6px;
 border-width: 1px;
-background-color: #bbbbbb;
-text-align: center;
-display: inline-block;
+border-color: #000000;
+}
+
+img {
+float: right;
+inline: block;
+}
+
+table, tr, td {
+margin: 5px;
+padding: 6px;
+border-width: 1px;
+border-color: #000000;
 vertical-align: top;
 }
