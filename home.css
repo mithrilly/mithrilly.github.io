@@ -8,6 +8,13 @@ body {
 background-color: #000000;
 }
 
+h2 {
+margin: 4px;
+padding: 3px;
+border-width: 1px;
+border-color: #333333;
+}
+
 div {
 margin: 6px;
 padding: 5px;

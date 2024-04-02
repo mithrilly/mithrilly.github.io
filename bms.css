@@ -11,22 +11,25 @@ padding: 6px;
 background-color: #ccffcc;
 }
 
-div.bms {
-width: 608px;
-margin: 5px;
-padding: 6px;
+div.noimg {
+width: 128px;
+height: 128px;
+padding: 7px;
+border-width: 1px;
+border-color: #000000;
+background-color: #99cc99;
+}
+
+h1 {
+margin: 4px;
+padding: 3px;
 border-width: 1px;
 border-color: #000000;
 }
 
-img {
-float: right;
-inline: block;
-}
-
 table, tr, td {
-margin: 5px;
-padding: 6px;
+margin: 4px;
+padding: 3px;
 border-width: 1px;
 border-color: #000000;
 vertical-align: top;
