@@ -8,7 +8,7 @@ div#base {
 width: 640px;
 margin: 12px 320px;
 padding: 6px;
-background-color: #669966;
+background-color: #77aa77;
 }
 
 div.noimg {
@@ -17,7 +17,7 @@ height: 128px;
 padding: 7px;
 border-width: 1px;
 border-color: #000000;
-background-color: #336633;
+background-color: #666666;
 }
 
 h1 {
