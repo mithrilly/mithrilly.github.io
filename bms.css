@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 body {
-background-color: #99ff99;
+background-color: #336633;
 }
 
 div#base {
 width: 640px;
 margin: 12px 320px;
 padding: 6px;
-background-color: #ccffcc;
+background-color: #669966;
 }
 
 div.noimg {
@@ -17,7 +17,7 @@ height: 128px;
 padding: 7px;
 border-width: 1px;
 border-color: #000000;
-background-color: #99cc99;
+background-color: #336633;
 }
 
 h1 {
