@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-language" content="ja">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="keywords" content="dx2d,DirectX,ゲーム制作">
+<meta name="description" content="dx2d ゲーム制作用ライブラリ">
+<title>dx2d home</title>
+<link rel="stylesheet" href="../reset.css">
+<style>
+body{
+background-color:#999999;
+}
+div#base{
+width:*;
+height:*;
+padding:12px;
+margin:60px 400px;
+background-color:#ffffff;
+}
+h1{
+font-size:32px;
+font-weight:bold;
+margin:12px;
+}
+h2{
+font-size:24px;
+margin:6px;
+}
+</style>
+</head>
+
+<body>
+<div id="base">
+<h1>dx2d</h1>
+<p>
+dx2dのホームページです。<br>
+このサイト含め未完成です。のんびり開発中～<br>
+latest version 0.1.0
+</p>
+<h2>dx2dって何だい</h2>
+<p>
+簡易ゲーム制作用ライブラリです。通称「D○ライブラリのパクリ」<br>
+DirectXとかWindowsAPIの面倒な部分を簡単に使えるようになったりならなかったり<br>
+元は身内用に開発した物です。中身はかなり乱雑かも
+</p>
+<h2>ダウンロードｫ</h2>
+リンクを右クリック→
+・latest<br>
+<a href="v0_01_00/dx2d.h" download>0.1.0</a><br>
+・old<br>
+まだ無いよ♪
+<h2>関数の説明など</h2>
+<ul>
+<li>int dx2d_init(HINSTANCE getinst);
+<p>
+dx2dを初期化する関数です。getinstの所にWinMainで得た第一引数を入れてね<br>
+FALSEが帰ってきたら初期化成功、TRUEだと失敗なので失敗したら早めにアプリを落としてください<br>
+例：<br>
+<textarea cols="80" rows="6" readonly>
+#include "dx2d.h"
+int WINAPI WinMain(HINSTANCE hinst,HINSTANCE,LPSTR,int){
+	if(dx2d_init())return 0;
+	d2dx_end();
+}
+</textarea>
+</p>
+</ul>
+</div>
+<small>(c) 2025 mithrilly</small>
+</body>
+
+</html>
