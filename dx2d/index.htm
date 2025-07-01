@@ -6,7 +6,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="content-language" content="ja">
 <meta http-equiv="Content-Style-Type" content="text/css">
-<meta name="keywords" content="dx2d,DirectX,ゲーム制作">
+<meta name="keywords" content="dx2d,DirectX,ゲーム制作,2D">
 <meta name="description" content="dx2d ゲーム制作用ライブラリ">
 <title>dx2d home</title>
 <link rel="stylesheet" href="../reset.css">
@@ -35,42 +35,91 @@ margin:6px;
 
 <body>
 <div id="base">
-<h1>dx2d</h1>
+<h1>dx2d home</h1>
 <p>
 dx2dのホームページです。<br>
-このサイト含め未完成です。のんびり開発中～<br>
+このページ含め未完成です。のんびり開発中～<br>
 latest version 0.1.0
 </p>
 <h2>dx2dって何だい</h2>
 <p>
-簡易ゲーム制作用ライブラリです。通称「D○ライブラリのパクリ」<br>
+2Dゲーム制作用の簡易ライブラリです。通称「D○ライブラリのパクリ」<br>
 DirectXとかWindowsAPIの面倒な部分を簡単に使えるようになったりならなかったり<br>
-元は身内用に開発した物です。中身はかなり乱雑かも
+元は身内用に開発した物です。急いで作ったので中身はかなり乱雑かも
+</p>
+<h2>特徴とか</h2>
+<p>
+ファイル一つだけなので持ち運びしやすい。ファイルサイズもとにかく小さい<br>
+2Dゲーム専用であり、最低限の機能しか無い。（最低限の機能すら未完成かも）<br>
+内部的にはDirect2Dを使ってたりする。簡単だぜぇ
+</p>
+<h2>使い方</h2>
+<p>
+プロジェクトフォルダにdx2d.hを入れて、インクルードするだけ！以上！簡単！
+</p>
+<h2>動作環境</h2>
+<p>
+visual studioなら大体使えると思います。<br>
+コンパイルした.exeの必須動作環境は<br>
+・Windows 7以降<br>
+・DirectX10.1以降がインストール済み<br>
 </p>
 <h2>ダウンロードｫ</h2>
-リンクを右クリック→
+<p>
 ・latest<br>
 <a href="v0_01_00/dx2d.h" download>0.1.0</a><br>
 ・old<br>
 まだ無いよ♪
+</p>
 <h2>関数の説明など</h2>
-<ul>
-<li>int dx2d_init(HINSTANCE getinst);
-<p>
-dx2dを初期化する関数です。getinstの所にWinMainで得た第一引数を入れてね<br>
-FALSEが帰ってきたら初期化成功、TRUEだと失敗なので失敗したら早めにアプリを落としてください<br>
-例：<br>
-<textarea cols="80" rows="6" readonly>
+<textarea cols="120" rows="17" readonly>
+ int dx2d_init(HINSTANCE getinst);
+dx2dを初期化する関数です。getinstの所にWinMainで得た第一引数を入れてね
+FALSEが帰ってきたら初期化成功、TRUEだと失敗なので失敗したら早めにアプリを落としてください
+ int dx2d_end();
+dx2dを終了させる関数です。アプリを落とす前に呼び出さないとメモリーリークします（脅し）
+ int procmsg();
+ウィンドウメッセージとかを処理します。所謂メッセージループ
+毎フレームこの関数を呼び出し、0が帰ってきたら早めにアプリを落としましょう。
+使用例：
 #include "dx2d.h"
 int WINAPI WinMain(HINSTANCE hinst,HINSTANCE,LPSTR,int){
 	if(dx2d_init())return 0;
+	while(procmsg()){/*ループ処理*/}
 	d2dx_end();
+	return 0;
 }
 </textarea>
+<textarea cols="120" rows="15" readonly>
+ int loadgraph(LPCWSTR getpath);
+画像を読み込む関数です。返り値はグラフィックのハンドル（int型）です。
+引数はwchar_t型の文字列でなければいけません。L"filepath" こうするとできます。
+ int drawgraph(int grhandle,double getx,double gety);
+画像を描画する関数です。grhandleに先ほどのグラフィックハンドルを渡してやるといいです。
+アルファ値を指定したり拡大縮小回転もできます（が、面倒なのでここでは表記しません）
+ int screenflip();
+描画した内容をウィンドウに表示する関数です。詳しくは「ダブルバッファリング」で検索
+例：
+int graph=loadgraph(L"test.bmp");
+while(procmsg()){
+	drawgraph(graph,30,50);
+	screenflip();
+}
+</textarea>
+<textarea cols="120" rows="2" readonly>
+残りはあとで書く;;
+</textarea>
+<h2>ライセンス</h2>
+<p>
+dx2d (c) 2025 mithrilly<br>
+No Warranty.<br>
+ソースコード本体を再配布・改変する場合は上記のクレジット表記をしてください。<br>
+コンパイルして作成したバイナリ（.exeファイル）を配布する場合は表記が不要です。
 </p>
-</ul>
+----<br>
+<a href="../index.htm">戻る</a>
+
 </div>
-<small>(c) 2025 mithrilly</small>
 </body>
 
 </html>
