@@ -10,15 +10,16 @@
 <meta name="description" content="dx2d ゲーム制作用ライブラリ">
 <title>dx2d home</title>
 <link rel="stylesheet" href="../reset.css">
+
 <style>
 body{
 background-color:#999999;
 }
 div#base{
-width:*;
+width:1200px;
 height:*;
 padding:12px;
-margin:60px 400px;
+margin:30px auto;
 background-color:#ffffff;
 }
 h1{
@@ -31,6 +32,7 @@ font-size:24px;
 margin:6px;
 }
 </style>
+
 </head>
 
 <body>
@@ -43,7 +45,7 @@ latest version 0.1.0
 </p>
 <h2>dx2dって何だい</h2>
 <p>
-2Dゲーム制作用の簡易ライブラリです。通称「D○ライブラリのパクリ」<br>
+C/C++言語で動作する2Dゲーム制作用の簡易ライブラリです。通称「D○ライブラリのパクリ」<br>
 DirectXとかWindowsAPIの面倒な部分を簡単に使えるようになったりならなかったり<br>
 元は身内用に開発した物です。急いで作ったので中身はかなり乱雑かも
 </p>
@@ -53,13 +55,10 @@ DirectXとかWindowsAPIの面倒な部分を簡単に使えるようになった
 2Dゲーム専用であり、最低限の機能しか無い。（最低限の機能すら未完成かも）<br>
 内部的にはDirect2Dを使ってたりする。簡単だぜぇ
 </p>
-<h2>使い方</h2>
+<h2>使い方＆開発環境</h2>
 <p>
-プロジェクトフォルダにdx2d.hを入れて、インクルードするだけ！以上！簡単！
-</p>
-<h2>動作環境</h2>
-<p>
-visual studioなら大体使えると思います。<br>
+Visual Studioなら大体使えると思います。それ以外でもWindows SDKがあれば動くはず<br>
+使い方は、プロジェクトフォルダにdx2d.hを入れて、インクルードするだけ！以上！簡単！<br>
 コンパイルした.exeの必須動作環境は<br>
 ・Windows 7以降<br>
 ・DirectX10.1以降がインストール済み<br>
@@ -72,19 +71,20 @@ visual studioなら大体使えると思います。<br>
 まだ無いよ♪
 </p>
 <h2>関数の説明など</h2>
-<textarea cols="120" rows="17" readonly>
+<textarea cols="120" rows="18" readonly>
  int dx2d_init(HINSTANCE getinst);
-dx2dを初期化する関数です。getinstの所にWinMainで得た第一引数を入れてね
+dx2dを起動させる関数です。これを呼び出す前にdx2dの関数を呼び出さないでね
+getinstの所にWinMainで得た第一引数(HINSTANCE型)を入れてね
 FALSEが帰ってきたら初期化成功、TRUEだと失敗なので失敗したら早めにアプリを落としてください
  int dx2d_end();
 dx2dを終了させる関数です。アプリを落とす前に呼び出さないとメモリーリークします（脅し）
  int procmsg();
 ウィンドウメッセージとかを処理します。所謂メッセージループ
-毎フレームこの関数を呼び出し、0が帰ってきたら早めにアプリを落としましょう。
+毎フレームこの関数を呼び出し、FALSEが帰ってきたら早めにアプリを落としましょう。
 使用例：
 #include "dx2d.h"
-int WINAPI WinMain(HINSTANCE hinst,HINSTANCE,LPSTR,int){
-	if(dx2d_init())return 0;
+int WINAPI WinMain(_In_ HINSTANCE hinst,_In_opt_ HINSTANCE,_In_ LPSTR,_In_ int){
+	if(dx2d_init(hinst))return 0;
 	while(procmsg()){/*ループ処理*/}
 	d2dx_end();
 	return 0;
@@ -106,8 +106,16 @@ while(procmsg()){
 	screenflip();
 }
 </textarea>
-<textarea cols="120" rows="2" readonly>
-残りはあとで書く;;
+<textarea cols="120" rows="5" readonly>
+ int inputstate(UCHAR inputcode);
+キーボード入力を取得する関数です。引数は入力状態を取得したいキーの定義名称を渡します。DIK_A、DIK_RIGHT等
+例：
+if(inputstate(DIK_UP){/*上矢印キーが押された時の処理*/}
+</textarea>
+<h2>更新履歴<h2>
+<textarea cols="120" rows="4" readonly>
+(2025/07/02) 0.1.0
+初公開。
 </textarea>
 <h2>ライセンス</h2>
 <p>
