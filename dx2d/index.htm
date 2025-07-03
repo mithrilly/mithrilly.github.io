@@ -86,7 +86,7 @@ dx2dを終了させる関数です。アプリを落とす前に呼び出さな�
 int WINAPI WinMain(_In_ HINSTANCE hinst,_In_opt_ HINSTANCE,_In_ LPSTR,_In_ int){
 	if(dx2d_init(hinst))return 0;
 	while(procmsg()){/*ループ処理*/}
-	d2dx_end();
+	dx2d_end();
 	return 0;
 }
 </textarea>
