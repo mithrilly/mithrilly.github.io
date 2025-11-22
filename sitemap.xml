@@ -4,22 +4,29 @@
 
 <url>
 <loc>https://mithrilly.github.io/</loc>
-<lastmod>2024-04-02</lastmod>
-<changefreq>weekly</changefreq>
+<lastmod>2025-11-14</lastmod>
+<changefreq>never</changefreq>
 <priority>1.0</priority>
 </url>
 
 <url>
 <loc>https://mithrilly.github.io/overcrisis.htm</loc>
 <lastmod>2023-06-18</lastmod>
-<changefreq>monthly</changefreq>
+<changefreq>never</changefreq>
+<priority>0.6</priority>
+</url>
+
+<url>
+<loc>https://mithrilly.github.io/pbd.htm</loc>
+<lastmod>2025-11-14</lastmod>
+<changefreq>never</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://mithrilly.github.io/bms.htm</loc>
-<lastmod>2024-04-02</lastmod>
-<changefreq>weekly</changefreq>
+<lastmod>2025-05-16</lastmod>
+<changefreq>never</changefreq>
 <priority>0.8</priority>
 </url>
 
